@@ -1,0 +1,25 @@
+<div class="main-content" >
+    <mat-grid-list cols="{{cols}}" gutterSize="10px" rowHeight="250px" translate="yes">
+        <div *ngFor="let student of students">
+            <mat-grid-tile >
+                <mat-card class="studentList">
+                    <mat-card-header>
+                        <mat-card-title>{{ student.student_Name }}</mat-card-title>
+                        <mat-card-subtitle>{{ student.student_Id }}</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            Name: {{ student.student_Name}} <br>
+                            ID: {{ student.student_Id }} <br>
+                            Email: {{ student.student_Email}} <br>
+                            Address: {{ student.student_Address }} <br>
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+
+            </mat-grid-tile>
+
+        </div>
+    </mat-grid-list>
+
+</div>

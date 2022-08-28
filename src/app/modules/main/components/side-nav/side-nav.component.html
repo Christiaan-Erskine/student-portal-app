@@ -1,0 +1,18 @@
+<!-- side-nav -->
+<mat-nav-list id="sidenav">
+    <a mat-list-item routerLink="./dashboard" routerLinkActive="active" *ngIf="this.user.type != 'student'">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
+    </a>
+    <a mat-list-item routerLink="./profile" routerLinkActive="active">
+        <mat-icon>person</mat-icon>
+        <span>Profile</span>
+    </a>
+    <footer id="sidenav-footer">
+        <a mat-list-item routerLinkActive="active" (click)="logout()" fxLayoutAlign="bottom">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+        </a>
+    </footer>
+    
+</mat-nav-list>
