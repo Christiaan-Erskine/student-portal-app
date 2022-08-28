@@ -1,2 +1,4 @@
-# to run
+# To run server
+```
 ng serve
+```
